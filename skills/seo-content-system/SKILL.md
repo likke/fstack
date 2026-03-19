@@ -14,14 +14,20 @@ inputs:
   - Any existing content or brief
 outputs:
   - Primary keyword + search intent analysis
-  - 6–10 supporting cluster keywords
+  - 6-10 supporting cluster keywords
   - Title + meta description for pillar page
-  - Outline for pillar + 2–3 cluster articles
+  - Outline for pillar + 2-3 cluster articles
   - EEAT check (expertise signals to include)
   - Internal linking plan
-  - "Would best client share this?" filter
+  - "Would best client share this" filter
   - CTA + conversion goal per piece
   - Brief template ready for /brief-review chaining
+allowed-tools:
+  - Bash
+  - Read
+  - Write
+  - Glob
+  - AskUserQuestion
 ---
 
 # SEO Content System

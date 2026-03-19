@@ -20,6 +20,12 @@ outputs:
   - Flag if talking to wrong segment (Revenue Gate fail)
   - Prioritized next questions for future calls
   - Notion-style synthesis document
+allowed-tools:
+  - Bash
+  - Read
+  - Write
+  - Glob
+  - AskUserQuestion
 ---
 
 # Customer Interview Synthesizer

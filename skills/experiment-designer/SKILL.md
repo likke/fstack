@@ -18,6 +18,12 @@ outputs:
   - Launch checklist
   - Revenue Gate + Best Client Test filter
   - Notion/Airtable-style experiment template
+allowed-tools:
+  - Bash
+  - Read
+  - Write
+  - Glob
+  - AskUserQuestion
 ---
 
 # Experiment Designer

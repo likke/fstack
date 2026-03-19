@@ -16,10 +16,16 @@ outputs:
   - Timed rollout plan (-7 days to Day 0 to +3 days)
   - Copy variants for PH title/tagline, X thread, LinkedIn post
   - Seeding list template (50 relevant accounts to DM or tag)
-  - "Would Garry RT this?" filter on your hook
+  - "Would Garry RT this" filter on your hook
   - Asset checklist
   - Demo-day 2-min story arc
   - Post-launch retro prompts
+allowed-tools:
+  - Bash
+  - Read
+  - Write
+  - Glob
+  - AskUserQuestion
 ---
 
 # Launch Orchestrator

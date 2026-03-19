@@ -17,6 +17,12 @@ outputs:
   - 3 new loop ideas with incentive copy, success metric, and effort estimate
   - Best Client Test + Revenue Gate scoring for each loop
   - Prioritized recommendation with quick MVP spec
+allowed-tools:
+  - Bash
+  - Read
+  - Write
+  - Glob
+  - AskUserQuestion
 ---
 
 # Virality Loop Designer

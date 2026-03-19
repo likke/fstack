@@ -18,6 +18,12 @@ outputs:
   - Top 3 recommended next experiments
   - Red flags (leaky buckets, churn spikes)
   - Retro-style summary for weekly L10
+allowed-tools:
+  - Bash
+  - Read
+  - Write
+  - Glob
+  - AskUserQuestion
 ---
 
 # Cohort Review

@@ -68,6 +68,15 @@ fstack turns your AI assistant into a virtual operating team you actually manage
 | GTM Lead | `/gtm-review` | Wrong campaign, wrong message, wrong target |
 | EOS Integrator | `/l10` | Monday clarity — rocks, scorecard, issues resolved |
 | Content Director | `/brief-review` | Brief quality gate + AI output review before publish |
+| **Growth Team** | | |
+| Growth Strategist | `/positioning-workshop` | Wrong positioning, wrong message |
+| Experiment Lead | `/experiment-designer` | Vibe-based shipping, no kill criteria |
+| Growth Analyst | `/cohort-review` | Vanity metrics, leaky buckets |
+| Launch Coordinator | `/launch-orchestrator` | Uncoordinated launches |
+| User Research Lead | `/customer-interview-synthesizer` | Building for imaginary users |
+| Growth Engineer | `/virality-loop-designer` | No referral loops |
+| Content Strategist | `/seo-content-system` | One-off posts, no compounding |
+| Growth Loop | `/growth-sprint` | Running growth phases in isolation |
 
 ---
 
@@ -156,6 +165,98 @@ Monday clarity check — a founder-adapted Level 10 meeting based on EOS/Tractio
 
 *EOS principle: "Rocks, not sand. Put the big stones in first."*
 *Garry Tan equivalent: making invisible work visible — `/review` resolves issues with finality.*
+
+### `/positioning-workshop`
+Fast structured positioning session using April Dunford's JTBD framework. Produces 3 ranked positioning options, a competitor 2x2 matrix, and a Revenue Gate recommendation. Kills positions that fail the Best Client Test and suggests pivots.
+
+*"If you can't explain why someone would switch to you in one sentence, you don't have positioning — you have a wishlist."*
+
+### `/experiment-designer`
+Designs rigorous low-risk growth experiments. Forces a written hypothesis, primary and guardrail metrics, and a kill criterion before anything launches. Outputs a Notion/Airtable experiment template.
+
+*"Every campaign without a kill criterion is a hobby."*
+
+### `/cohort-review`
+Analyzes cohort and segment data to find growth truth. Runs the default alive check first. Identifies profitable cohorts (LTV:CAC > 3x), leaky buckets, and the highest-leverage segment or channel right now.
+
+*"Vanity metrics are comfort food. Cohort data is the blood test."*
+
+### `/launch-orchestrator`
+Builds and sequences a realistic launch campaign (-7 days to +3 days). Includes copy variants for Product Hunt, X, and LinkedIn, a 50-account seeding list template, and a "Would Garry RT this?" hook filter.
+
+*"A launch without coordination is just noise with a countdown."*
+
+### `/customer-interview-synthesizer`
+Distills raw user call notes and transcripts into Jobs-to-be-Done, objection patterns, and updated best client persona. Flags if you're talking to the wrong segment before you build anything.
+
+*"Talking to users without synthesizing is just expensive small talk."*
+
+### `/virality-loop-designer`
+Diagnoses current viral coefficient and designs 3 concrete referral/viral loop options. Each loop includes incentive copy, success metric, implementation effort, and a Best Client Test filter.
+
+*"If your users aren't bringing you more users, you have a product — not a growth engine."*
+
+### `/seo-content-system`
+Turns any topic into a full SEO content cluster — pillar page + 2–3 cluster articles + internal linking plan. Includes an EEAT check and a "would your best client share this?" filter before publishing.
+
+*"One blog post is a lottery ticket. A content system is a compounding asset."*
+
+### `/growth-sprint`
+Orchestrates the full growth loop across all fstack growth skills. Run at the start of any new growth push or quarterly reset. Chains: `/customer-interview-synthesizer` → `/positioning-workshop` → `/experiment-designer` → `/launch-orchestrator` → `/cohort-review` → `/retro`.
+
+*"Growth isn't a department. It's a loop."*
+
+---
+
+## Skill Chaining
+
+### Core operating loop (weekly)
+```
+/sprint-plan → /ceo-review → /eng-review → /ux-review → /ship → /retro → /l10
+```
+
+### Growth loop (4-week cycle)
+```
+/customer-interview-synthesizer
+        ↓
+/positioning-workshop
+        ↓
+/experiment-designer
+        ↓
+/launch-orchestrator
+        ↓
+/cohort-review
+        ↓
+/retro ──────→ back to /customer-interview-synthesizer
+```
+
+Run `/growth-sprint` to orchestrate the entire cycle automatically.
+
+### Content loop (per piece)
+```
+/office-hours → /brief-review (MODE 1) → [produce] → /brief-review (MODE 2) → /gtm-review → publish
+```
+
+---
+
+## Installation (Claude Code)
+
+```bash
+# Clone fstack into your Claude Code skills directory
+git clone https://github.com/likke/fstack.git ~/.claude/skills/fstack
+
+# Or add to a specific project so teammates get it
+cp -Rf ~/.claude/skills/fstack .claude/skills/fstack && rm -rf .claude/skills/fstack/.git
+```
+
+Then add to your project's `CLAUDE.md`:
+```
+## fstack skills
+Available skills: /office-hours, /ceo-review, /eng-review, /ux-review, /ship, /retro, 
+/gtm-review, /brief-review, /sprint-plan, /l10, /positioning-workshop, /experiment-designer, 
+/cohort-review, /launch-orchestrator, /customer-interview-synthesizer, /virality-loop-designer, 
+/seo-content-system, /growth-sprint
+```
 
 ---
 

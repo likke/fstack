@@ -4,21 +4,27 @@ version: 0.2.0
 description: >
   Fast structured positioning session. April Dunford-style JTBD + YC "make
   something people want". Run before any new launch, messaging refresh, or
-  when leads keep saying "what do you actually do?" Trigger on: "sharpen my
+  when leads keep saying "what do you actually do" Trigger on: "sharpen my
   positioning", "what's my positioning", "how do I explain what I do",
   "nobody gets what we do", "messaging isn't landing", "help me position this".
 inputs:
   - Current product or feature description
   - Target user profile or best client
-  - 1–3 competitors (name + one-line description)
+  - 1-3 competitors (name + one-line description)
   - Any existing messaging or landing page copy
 outputs:
   - 3 differentiated positioning options ranked by Best Client Test
   - One-sentence version of each
-  - "Why now?" two-sentence justification
+  - "Why now" two-sentence justification
   - Competitor 2x2 matrix (better/worse axes)
   - Final recommendation + Revenue Gate bucket
   - Kill recommendation + pivot suggestions if Best Client Test fails
+allowed-tools:
+  - Bash
+  - Read
+  - Write
+  - Glob
+  - AskUserQuestion
 ---
 
 # Positioning Workshop
