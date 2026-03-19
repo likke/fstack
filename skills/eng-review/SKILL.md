@@ -9,6 +9,14 @@ description: >
 ---
 
 # Engineering Review
+*Adapted from Garry Tan's gstack `/plan-eng-review` — ASCII diagrams, failure modes, security concerns, test matrix.*
+
+> *"The paranoid reviewer who finds production bugs before they ship."*
+> — gstack README
+
+Garry's eng review forces data flow diagrams, failure modes, security concerns, and test coverage — before building. His principle: "AI makes the marginal cost of rigor near-zero. So you might as well be rigorous."
+
+On a small team, this skill replaces the missing senior engineer or CTO.
 
 ## What This Does
 Simulates a senior technical review. For small teams where one developer owns the entire codebase, this review protects you from bugs that become client emergencies.

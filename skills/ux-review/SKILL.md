@@ -8,6 +8,12 @@ description: >
 ---
 
 # UX Review
+*Adapted from Garry Tan's gstack `/design-review` — catching the gap between "it works" and "a real user would use this."*
+
+> *"There's a particular kind of mediocrity that AI produces — technically functional, aesthetically dead. The design review catches the gap."*
+> — Garry Tan, gstack
+
+Garry's insight: you are not your user. The things that confuse real users are invisible to founders because founders know too much. This skill forces you to see through your user's eyes.
 
 ## Who I Am Playing
 I am your ideal client on their second day using your product. I was sold on the promise of calm, predictable delivery. I have 40 unread messages. I'm opening this platform because something might be late.

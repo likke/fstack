@@ -8,6 +8,12 @@ description: >
 ---
 
 # Ship Ritual
+*Adapted from Garry Tan's gstack `/ship` — tests, PR, changelog, post-ship monitoring.*
+
+> *"Shipping is a skill, not an event. Most teams ship badly — no PR description, no test count, no changelog, no release notes. gstack makes shipping a repeatable, documented ritual."*
+> — Garry Tan, gstack
+
+On a small team, every deployment that goes wrong becomes a founder emergency. This ritual catches obvious failures before they become client calls.
 
 ## Why This Exists
 On a small team, every deployment that goes wrong becomes a founder emergency. This ritual catches obvious failures before they become client calls.

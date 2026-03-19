@@ -9,6 +9,12 @@ description: >
 ---
 
 # CEO Review
+*Adapted from Garry Tan's gstack `/plan-ceo-review` + YC's "make something people want."*
+
+> *"Scope expansion is free when AI builds it. But the question isn't 'can we build this bigger' — it's 'are we solving the right problem at the right scope?'"*
+> — Garry Tan, gstack
+
+Garry uses the 10-star product question: what would the perfect version of this look like? Then work backwards to the smallest thing that proves the thesis. This skill does that — calibrated for founders with limited runway.
 
 ## What This Does
 Before any feature gets assigned to your team, run it through this review. Catches wrong scope, wrong product decisions, and features that will never pay back the time spent.

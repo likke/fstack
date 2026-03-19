@@ -9,6 +9,12 @@ description: >
 ---
 
 # Weekly Retro
+*Adapted from Garry Tan's gstack `/retro` — lines added, commits, test coverage trend. Extended with YC's "default alive" health check.*
+
+> *"My last `/retro` across 3 projects: 140,751 lines added, 362 commits, ~115k net LOC."*
+> — Garry Tan, gstack
+
+Garry uses `/retro` to make his own output visible to himself. For a founder running a team, it's a navigation instrument. If commits drop, something is wrong. If net MRR is negative, you're burning faster than you're growing. Surface the signal before it becomes a crisis.
 
 ## What This Does
 Every Friday or Monday morning, pull together what happened across three dimensions: product, delivery, and founder decisions. Make the invisible visible.

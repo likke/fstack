@@ -9,6 +9,12 @@ description: >
 ---
 
 # Office Hours
+*Adapted from Garry Tan's gstack `/office-hours` + YC's core principle: "Talk to users before you build."*
+
+> *"You said 'daily briefing app.' But what you actually described is a personal chief of staff AI."*
+> — gstack `/office-hours` example
+
+The most common founder failure is solving the wrong problem. This skill listens for the pain underneath your idea — not the feature you described.
 
 ## What This Does
 You describe what you want to build or sell. I listen for the pain underneath — not the feature — and challenge you before you waste a week on the wrong thing.

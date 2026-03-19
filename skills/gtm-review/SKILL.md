@@ -9,6 +9,12 @@ description: >
 ---
 
 # GTM Review
+*No direct gstack equivalent — GTM is the founder's job. Built on YC's "talk to users" + Paul Graham's "default alive" framework.*
+
+> *"Do things that don't scale. Find your best users. Make them extremely happy. Then figure out how to scale that."*
+> — Paul Graham, YC
+
+YC's GTM insight: the best early marketing is not a campaign. It's finding the one person whose life you changed and figuring out how to find 10 more of them. This skill operationalizes that — from "who is your Barkota?" to "how do you find 5 more of them?"
 
 ## What This Does
 Before any campaign, outreach sequence, or new channel goes live — run it through this review. Prevents spending Charlene's (or your) time on campaigns that won't close.

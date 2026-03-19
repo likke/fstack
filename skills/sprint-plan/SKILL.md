@@ -9,6 +9,12 @@ description: >
 ---
 
 # Sprint Plan
+*Adapted from YC's weekly check-in culture + EOS Traction + Garry Tan's gstack sprint principles.*
+
+> *"What's the one thing you're shipping this week?"*
+> — YC weekly check-in format
+
+YC's weekly check-in is ruthless: one goal, one week, did you hit it or not? No excuses, no context, just the number. This skill builds that discipline into your sprint planning — one goal per sprint, explicit deferrals, visible blockers.
 
 ## What This Does
 Before handing your team work for the week, run it through this review. Every task gets tested against: does it close a client, retain a client, or reduce burn? Everything else gets explicitly deferred.
