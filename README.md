@@ -67,6 +67,7 @@ fstack turns your AI assistant into a virtual operating team you actually manage
 | COO | `/retro` | What slipped this week and why |
 | GTM Lead | `/gtm-review` | Wrong campaign, wrong message, wrong target |
 | EOS Integrator | `/l10` | Monday clarity — rocks, scorecard, issues resolved |
+| Content Director | `/brief-review` | Brief quality gate + AI output review before publish |
 
 ---
 
@@ -139,6 +140,11 @@ Weekly visibility on team output, client delivery health, and founder decisions.
 Pressure-test any GTM initiative. Applies Best Client Test and Revenue Gate to campaigns and outreach. Flags wrong message, wrong target, wrong channel.
 
 *No gstack equivalent — GTM is the founder's job.*
+
+### `/brief-review`
+Two-mode content quality gate. **Before production:** reviews the brief for audience clarity, outcome clarity, voice, constraints, and success criteria. **After production:** reviews AI output for generic language, brand voice, specificity, CTA, and the "would your best client publish this?" test. Includes a red-flag phrase list and rewrite capability.
+
+*The skill that makes you unfireable. If it could have been written by anyone, rewrite it.*
 
 ### `/sprint-plan`
 Plan a sprint for your team against one clear goal. Every task gets filtered through the three principles before it gets assigned.
