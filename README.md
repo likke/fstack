@@ -4,6 +4,22 @@
 
 *fstack = founder stack. Or Fleire's stack. Depends who's asking.*
 
+---
+
+## Two Tracks
+
+### 🏗️ Founder / Operator Track
+18 skills. Designed for Claude Code, Cursor, or any AI coding agent. Full operating system — sprint planning, engineering reviews, L10 meetings, growth loops, positioning, launch orchestration, and more. Requires a terminal and basic git knowledge.
+
+→ See the [Virtual Team table](#the-virtual-team) and [Skills section](#the-skills) below.
+
+### 📋 Marketer Track
+8 skills. Copy-paste prompts for ChatGPT, Claude, or any AI chat. No terminal, no installation, no GitHub knowledge required. Everything a marketer needs to brief AI correctly, review AI output, pressure-test campaigns, and build a content system.
+
+→ **[MARKETER-START-HERE.md](MARKETER-START-HERE.md)** — Start here if you're a marketer.
+
+---
+
 Inspired by [Garry Tan's gstack](https://github.com/garrytan/gstack) and Y Combinator's core operating philosophy. Adapted for founders who are:
 - Running a content ops, marketing services, or SaaS business
 - Working with a small team (1-5 people)
