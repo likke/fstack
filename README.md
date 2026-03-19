@@ -191,11 +191,16 @@ Agent: Stop. That's the signal. YC's #1 lesson: build what people want,
 
 ## Credits
 
-Built on:
-- [Garry Tan's gstack](https://github.com/garrytan/gstack) — the virtual engineering team concept
-- [Y Combinator's core principles](https://www.ycombinator.com/library) — make something people want, talk to users, default alive
+### Garry Tan ([@garrytan](https://x.com/garrytan))
+President & CEO of Y Combinator. Creator of [gstack](https://github.com/garrytan/gstack) — the open source software factory that directly inspired this project. Garry's "Boil the Lake" principle, his virtual engineering team concept, and his public experiment in agentic development are the foundation everything here is built on. Read his work: [garryslist.org](https://garryslist.org)
+
+### Y Combinator
+The source of the core operating principles that run through every skill here — make something people want, talk to users, default alive, do things that don't scale. Thousands of companies built on these principles. [ycombinator.com/library](https://www.ycombinator.com/library)
+
+### Also built on:
 - [Garry's "Boil the Lake" essay](https://garryslist.org/posts/boil-the-ocean) — completeness principle
-- EOS / Traction by Gino Wickman — the sprint rhythm and L10 structure
+- EOS / Traction by Gino Wickman — sprint rhythm and L10 structure
+- Paul Graham's essays — default alive, ramen profitable, do things that don't scale
 
 ---
 
