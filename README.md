@@ -1,6 +1,8 @@
-# founderstack
+# fstack
 
-**A founder's operating system — built on Garry Tan's gstack principles, adapted for content ops founders running lean with small teams and real runway pressure.**
+**A founder's operating system — built on Garry Tan's gstack principles and EOS/Traction, adapted for content ops founders running lean with small teams and real runway pressure.**
+
+*fstack = founder stack. Or Fleire's stack. Depends who's asking.*
 
 Inspired by [Garry Tan's gstack](https://github.com/garrytan/gstack) and Y Combinator's core operating philosophy. Adapted for founders who are:
 - Running a content ops, marketing services, or SaaS business
@@ -24,7 +26,7 @@ The insight is the same: **AI makes the marginal cost of rigor near-zero.** You 
 
 ## The YC DNA Underneath
 
-Every skill in founderstack is grounded in Y Combinator's core operating principles. These aren't motivational quotes — they're forcing functions built into each review:
+Every skill in fstack is grounded in Y Combinator's core operating principles. These aren't motivational quotes — they're forcing functions built into each review:
 
 ### "Make something people want"
 The most common founder failure: building something technically impressive that nobody actually needs. Every `/office-hours` review starts here — not with the feature, but with the pain. What specific moment made a real user ask for this?
@@ -53,7 +55,7 @@ Your highest-margin, lowest-friction, happiest client is not a success story. Th
 
 ## The Virtual Team
 
-founderstack turns your AI assistant into a virtual operating team you actually manage:
+fstack turns your AI assistant into a virtual operating team you actually manage:
 
 | Role | Skill | What it catches |
 |------|-------|-----------------|
@@ -64,12 +66,13 @@ founderstack turns your AI assistant into a virtual operating team you actually 
 | Release Manager | `/ship` | Deployment risks, client-breaking changes |
 | COO | `/retro` | What slipped this week and why |
 | GTM Lead | `/gtm-review` | Wrong campaign, wrong message, wrong target |
+| EOS Integrator | `/l10` | Monday clarity — rocks, scorecard, issues resolved |
 
 ---
 
 ## The Three Core Principles
 
-These are founderstack's versions of Garry's "Boil the Lake" — calibrated for founders with limited runway and small teams.
+These are fstack's versions of Garry's "Boil the Lake" — calibrated for founders with limited runway and small teams.
 
 ### 1. The Best Client Test
 *(adapted from YC's "make something people want")*
@@ -141,6 +144,12 @@ Pressure-test any GTM initiative. Applies Best Client Test and Revenue Gate to c
 Plan a sprint for your team against one clear goal. Every task gets filtered through the three principles before it gets assigned.
 
 *YC equivalent: "What's the one thing you're shipping this week?"*
+
+### `/l10`
+Monday clarity check — a founder-adapted Level 10 meeting based on EOS/Traction by Gino Wickman. Covers scorecard, Rock review, headlines, last week's To-Dos, and IDS (Identify, Discuss, Solve). Same agenda every Monday. Produces a To-Do list with owners and due dates before you open Slack.
+
+*EOS principle: "Rocks, not sand. Put the big stones in first."*
+*Garry Tan equivalent: making invisible work visible — `/review` resolves issues with finality.*
 
 ---
 
