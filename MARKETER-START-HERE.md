@@ -10,11 +10,28 @@ fstack has 8 skills built specifically for you — copy-paste prompts you drop s
 
 There's one thing the 8 skills below assume: that you know what your brand sounds like, what it never says, and which positioning is currently live.
 
-If you don't have that documented yet, the operator track includes a Brand Identity Layer — `/identity`, `/rules`, and `/memory` — that produces exactly that. You can use the prompts in your AI chat tool, the same way you use the 8 skills below. Run them once per brand. Everything you produce after that will be sharper.
+If you don't have that documented yet, build it first. The Brand Identity Layer is 8 copy-paste prompts — run them once, and everything you produce after that will be sharper and faster.
 
-→ Brand Identity Layer prompts are in `templates/marketer/` alongside these 8 skills.
+**Build your brand identity layer in this order:**
 
----
+| Step | What it builds | Template |
+|------|---------------|----------|
+| 1 | Voice Card — your 8-dimension brand voice | [identity.md](templates/marketer/identity.md) |
+| 2 | Rules Card — what your brand never says | [rules.md](templates/marketer/rules.md) |
+| 3 | Memory Index — live positioning, approved copy, killed options | [memory.md](templates/marketer/memory.md) |
+| 4 | Brand Doc Index — which brief to use and when | [files.md](templates/marketer/files.md) |
+| 5 | Session Charter — load all context before every content session | [context-setup.md](templates/marketer/context-setup.md) |
+| 6 | Brand Check — audit any piece before it ships | [brand-check.md](templates/marketer/brand-check.md) |
+| 7 | Repurpose — one source into platform-ready variants | [repurpose.md](templates/marketer/repurpose.md) |
+| 8 | Content Governance — who approves what, and when | [content-governance.md](templates/marketer/content-governance.md) |
+
+**Starter kit blueprints** — pre-filled workflows for the most common content types:
+→ [blueprint-social.md](templates/marketer/blueprint-social.md) — LinkedIn / X / Instagram post
+→ [blueprint-blog.md](templates/marketer/blueprint-blog.md) — Blog post or long-form article
+→ [blueprint-email.md](templates/marketer/blueprint-email.md) — Cold outreach or nurture sequence
+
+**Filled example** — see a completed Voice Card for DashoContent:
+→ [examples/dashocontent/identity.md](examples/dashocontent/identity.md)
 
 ---
 
@@ -81,20 +98,24 @@ If you only use one thing from fstack, use this.
 The Content Loop is the system for using AI to create content without losing your brand voice:
 
 ```
-Validate the idea
+Load brand context (context-setup)
        ↓
-Review the brief (before production)
+Validate the idea (office-hours)
+       ↓
+Review the brief (brief-review MODE 1)
        ↓
 Produce (AI writes the draft)
        ↓
-Review the output (before publishing)
+Review the output (brief-review MODE 2)
        ↓
-Pressure-test the campaign
+Score against your standards (brand-check)
+       ↓
+Pressure-test the campaign (gtm-review)
        ↓
 Publish
 ```
 
-Most marketers skip straight to "Produce" and wonder why their AI content sounds generic. The loop is what fixes that.
+Most marketers skip straight to "Produce" and wonder why their AI content sounds generic. The loop — and the brand identity layer that powers it — is what fixes that.
 
 Full walkthrough with real examples: [templates/marketer/content-loop.md](templates/marketer/content-loop.md)
 

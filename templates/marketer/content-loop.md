@@ -6,13 +6,17 @@
 ## The Loop
 
 ```
+/context-setup         → Load brand context before any session starts
+       ↓
 /office-hours          → Validate the idea before you brief
        ↓
 /brief-review MODE 1   → Review the brief before production
        ↓
      PRODUCE           → AI writes the draft
        ↓
-/brief-review MODE 2   → Review AI output before publish
+/brief-review MODE 2   → Review AI output for quality
+       ↓
+/brand-check           → Score against Voice Card, Rules Card, and Memory
        ↓
 /gtm-review            → Pressure-test the campaign
        ↓
@@ -23,11 +27,45 @@ Most marketers skip everything except "PRODUCE." That's why their content is gen
 
 The loop is the system. The loop is what makes you unfireable.
 
+> **New to fstack?** Start with the Brand Identity Layer before running this loop. You need a Voice Card, Rules Card, and Memory Index loaded into your session before Step 1 is useful. Build them in this order: `templates/marketer/identity.md` → `templates/marketer/rules.md` → `templates/marketer/memory.md` → `templates/marketer/context-setup.md`. The loop runs on top of that foundation.
+
 ---
 
 ## Step-by-Step Walk-Through: A LinkedIn Thought Leadership Post
 
 **Scenario:** You're a marketing manager at a content agency. You want to post a LinkedIn thought leadership piece about content operations. Let's walk through the entire loop.
+
+---
+
+### STEP 0 — Context Setup: Load your brand before anything else
+
+Before any content is produced, load your brand context into the AI session. This is not optional. An AI session without brand context is a session that will produce generic output you'll revise three times.
+
+**What you paste into ChatGPT or Claude at the start of every session:**
+
+```
+I'm producing content for [YOUR BRAND NAME]. Here is my brand context:
+
+VOICE CARD:
+[Paste your full Voice Card here — built using templates/marketer/identity.md]
+
+RULES CARD:
+[Paste your full Rules Card here — built using templates/marketer/rules.md]
+
+LIVE POSITIONING (from my Memory Index):
+[Paste your one-liner positioning from Memory Section 1]
+
+LIVE CAMPAIGNS — do not contradict these:
+[Paste any active campaigns from Memory Section 4 — or write "none active"]
+
+Keep this context active for everything we produce in this session.
+```
+
+**What you get back:**
+
+AI confirms the context is loaded and summarizes the key voice settings and forbidden phrases for the session.
+
+**What this does:** Every subsequent prompt in this session runs against your brand standards. The AI knows what sounds like you, what you never say, and what positioning is currently live. You don't have to repeat instructions for every piece.
 
 ---
 
@@ -143,7 +181,40 @@ One optional improvement: if you have a real brand name you can use (with permis
 
 ---
 
-### STEP 5 — GTM Review: Pressure-test before you boost or send
+### STEP 5 — Brand Check: Score it before it leaves your hands
+
+Brief Review MODE 2 catches output quality. Brand Check scores it against your actual brand standards. These are different checks. Run both.
+
+**What you paste into ChatGPT or Claude:**
+
+```
+Run a brand check on this draft using my Voice Card and Rules Card (already loaded in this session).
+
+Score it on these 5 dimensions for a social post:
+D1 — Voice Alignment: does this match my Voice Card settings?
+D2 — Forbidden Phrase Scan: does it contain any phrases from my banned list?
+D3 — Specificity: does every major claim have a real number, name, or example?
+D5 — CTA Quality: is there exactly one CTA, and is it direct?
+D6 — Platform Rules: does it follow my Rules Card Layer 5 for LinkedIn?
+
+Give me a score out of 5. Verdict: Ship / Fix / Kill.
+If Fix: list the exact changes needed — not "improve the tone," only specific replacements.
+If Kill: tell me which dimension failed most severely and what the brief needs to fix before restarting.
+
+POST: [paste the draft here]
+```
+
+**What you get back (example):**
+
+AI: "D1 Voice: PASS — pace is fast, authority is present, no hedging. D2 Forbidden phrases: PASS — clean. D3 Specificity: PASS — '30 assets, zero revision rounds' is concrete. D5 CTA: PASS — one clear ask. D6 LinkedIn rules: PASS — no hashtag stack, no engagement-bait closer.
+
+Score: 5/5. Verdict: Ship."
+
+**What this does:** Gives you a binary verdict based on your actual standards — not an AI's general opinion of what "good" looks like.
+
+---
+
+### STEP 6 — GTM Review: Pressure-test before you boost or send
 
 **What you paste into ChatGPT or Claude:**
 
@@ -183,7 +254,9 @@ That's the loop. That's the system. That's what makes you unfireable.
 
 ---
 
-## Quick Reference: The Loop in 5 Prompts
+## Quick Reference: The Loop in 7 Prompts
+
+**Prompt 0 — Context setup:** "Here is my brand context for this session: [paste Voice Card + Rules Card + Memory positioning + live campaigns]. Keep this active for everything we produce today."
 
 **Prompt 1 — Validate:** "Challenge this content idea. Ask me what specific moment made me think of this."
 
@@ -193,7 +266,9 @@ That's the loop. That's the system. That's what makes you unfireable.
 
 **Prompt 4 — Review output:** "Review this content. Check: scroll test, brand voice, specificity, CTA, best client test. Verdict: Ship / Rewrite / Brief again."
 
-**Prompt 5 — GTM check:** "Pressure-test this campaign. Right person + right pain? Outcome or feature? Will this make money (A/B/C/D)? What's the kill criterion?"
+**Prompt 5 — Brand check:** "Run a brand check using my loaded Voice Card and Rules Card. Score D1–D6 for [platform]. Verdict: Ship / Fix / Kill. Specific changes only."
+
+**Prompt 6 — GTM check:** "Pressure-test this campaign. Right person + right pain? Outcome or feature? Will this make money (A/B/C/D)? What's the kill criterion?"
 
 ---
 
