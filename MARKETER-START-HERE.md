@@ -6,6 +6,18 @@ fstack has 8 skills built specifically for you — copy-paste prompts you drop s
 
 ---
 
+## Before You Use Any of These Skills
+
+There's one thing the 8 skills below assume: that you know what your brand sounds like, what it never says, and which positioning is currently live.
+
+If you don't have that documented yet, the operator track includes a Brand Identity Layer — `/identity`, `/rules`, and `/memory` — that produces exactly that. You can use the prompts in your AI chat tool, the same way you use the 8 skills below. Run them once per brand. Everything you produce after that will be sharper.
+
+→ Brand Identity Layer prompts are in `templates/marketer/` alongside these 8 skills.
+
+---
+
+---
+
 ## How It Works
 
 1. Find the skill you need below
@@ -103,7 +115,9 @@ For every piece of content, every campaign, every positioning option — ask: wo
 
 ## For Founders and Operators
 
-You're looking at the marketer track. fstack also has a full founder/operator track with 18 skills designed for Claude Code and Cursor — sprint planning, engineering reviews, EOS L10 meetings, growth loops, and more.
+You're looking at the marketer track. fstack also has a full founder/operator track with 26 skills designed for Claude Code and Cursor — brand identity layer, sprint planning, engineering reviews, EOS L10 meetings, growth loops, and more.
+
+The brand identity layer (8 new skills) is the part most relevant if you're running content operations: `/identity` locks your voice and visual system, `/rules` documents what you never say, `/memory` tracks your live positioning and killed campaigns, and `/context-setup` loads all of that before every content session so AI doesn't default to generic.
 
 → [README.md](README.md)
 

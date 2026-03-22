@@ -87,8 +87,15 @@ Every skill MUST have:
 - [ ] Best Client Test section
 - [ ] Revenue Gate section (A/B/C/D)
 - [ ] Maintainability Check section
+- [ ] Chains to section (even if it only chains to one other skill)
 
 These are the fstack standards. They're not suggestions.
+
+**If your skill belongs to the Brand Identity Layer** (it depends on or produces identity, voice, rules, or memory context), it must also:
+- [ ] Reference which brand layer it reads from (`/identity`, `/rules`, `/memory`, `/files`)
+- [ ] Reference which brand layer it writes to (or state "no write" explicitly)
+- [ ] Document whether it requires `/context-setup` to be loaded before running
+- [ ] Include a conflict protocol — what happens if the brand context contradicts the input
 
 ### 4. Quality bar
 
@@ -100,6 +107,7 @@ Before submitting, run the skill against these checks:
 - **Kill logic.** Every skill must have clear "stop and kill" criteria.
 - **Best Client Test.** Every output must be filterable against the user's best client.
 - **Garry-level rigor.** Would Garry Tan use this? Would he ship it at YC?
+- **Brand context aware.** If the skill produces content, it should either depend on `/context-setup` or explicitly state why it doesn't need it. Skills that produce content without brand context are incomplete.
 
 ---
 
@@ -129,12 +137,30 @@ Good:
 - Chains naturally to other skills
 - Works for a one-person team AND a 10-person team
 - Is opinionated (recommends, doesn't just list options)
+- Knows where it sits in the stack (brand layer / operating loop / growth team)
 
 Not good:
 - Generic "prompt templates" with no decision logic
 - Skills that only work for specific tools or platforms
 - Skills that never kill anything
 - Skills with vague output formats
+- Content-producing skills that don't reference brand context at all
+
+## Skill Layers
+
+fstack has three layers. Know which one your skill belongs to before you write it:
+
+**Brand Identity Layer** — Foundation. Runs once per brand before anything else.
+Skills: `/identity`, `/rules`, `/memory`, `/files`, `/context-setup`, `/brand-check`, `/repurpose`, `/content-governance`
+Rule: Brand layer skills don't chase Revenue Gate A directly. Their job is to protect quality and prevent drift. Their Revenue Gate impact is always downstream — fewer revision rounds (B), faster onboarding (C).
+
+**Core Operating Loop** — Weekly rhythm. Runs every sprint.
+Skills: `/office-hours`, `/ceo-review`, `/eng-review`, `/ux-review`, `/ship`, `/retro`, `/gtm-review`, `/brief-review`, `/sprint-plan`, `/l10`
+Rule: Operating loop skills always apply the three principles: Best Client Test, Maintainability Check, Revenue Gate.
+
+**Growth Team** — Periodic. Runs at the start of growth pushes and quarterly resets.
+Skills: `/positioning-workshop`, `/experiment-designer`, `/cohort-review`, `/launch-orchestrator`, `/customer-interview-synthesizer`, `/virality-loop-designer`, `/seo-content-system`, `/growth-sprint`
+Rule: Growth skills always include a kill criterion and a default alive check.
 
 ---
 

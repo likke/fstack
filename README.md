@@ -6,10 +6,18 @@
 
 ---
 
+Fleire Castro started her career writing a $1 article on oDesk at 21 — a baby on her hip, recently fired from her first corporate job. That was 2006. What followed was 18 years of building: a content agency in Cebu that served enterprises like Aboitiz and Megaworld, a decade of running operations under pressure across three countries, a hard burnout at 36, and a complete rebuild. Today she operates as a Fractional CMO and AI systems builder — the person companies bring in when the founder has been doing marketing themselves, burning money with agencies, and getting nothing that compounds. She's been a U.S. State Department Digital Economy Fellow, an AppWorks alumni, and has trained 100+ businesses across Southeast Asia. The authority is specific, not claimed.
+
+In late 2022, the tools changed. Large language models didn't make marketing easier — they made the gap between operators with systems and operators without them wider, faster. Teams that had never documented a voice, never locked a positioning decision, never mapped an approval workflow suddenly had AI that would write anything. Which meant they were publishing the average of everything the model was trained on, not the best of themselves. The marginal cost of content production dropped to near-zero. The marginal cost of strategic rigor stayed exactly the same — unless you built the system that enforced it.
+
+fstack is that system. What started as an adaptation of Garry Tan's gstack — a personal operating OS for the founder managing every function alone — has grown into a working framework for brand identity, content operations, GTM, and growth that runs on AI with a small team in the seats. Every skill here came from a real failure: a campaign that shipped with the wrong message, a sprint with no goal, a brand that let AI regress it to generic. The brand identity layer is new because the original 18 skills assumed you already knew who you were. Most teams don't — not operationally. fstack now builds that foundation first.
+
+---
+
 ## Two Tracks
 
 ### 🏗️ Founder / Operator Track
-18 skills. Designed for Claude Code, Cursor, or any AI coding agent. Full operating system — sprint planning, engineering reviews, L10 meetings, growth loops, positioning, launch orchestration, and more. Requires a terminal and basic git knowledge.
+26 skills. Designed for Claude Code, Cursor, or any AI coding agent. Full operating system — brand identity, sprint planning, engineering reviews, L10 meetings, growth loops, positioning, launch orchestration, and more. Requires a terminal and basic git knowledge.
 
 → See the [Virtual Team table](#the-virtual-team) and [Skills section](#the-skills) below.
 
@@ -84,6 +92,15 @@ fstack turns your AI assistant into a virtual operating team you actually manage
 | GTM Lead | `/gtm-review` | Wrong campaign, wrong message, wrong target |
 | EOS Integrator | `/l10` | Monday clarity — rocks, scorecard, issues resolved |
 | Content Director | `/brief-review` | Brief quality gate + AI output review before publish |
+| **Brand Identity Layer** | | |
+| Brand Architect | `/identity` | Undefined voice, visual drift, missing brand architecture |
+| Compliance Lead | `/rules` | Forbidden phrases, legal exposure, platform violations |
+| Chief of Staff | `/memory` | Contradictory campaigns, relitigated decisions |
+| Brand Auditor | `/brand-check` | Off-brand output clearing the gate unchallenged |
+| Session Director | `/context-setup` | Content sessions starting without brand context loaded |
+| Document Controller | `/files` | Stale briefs, conflicting documents, no authority stack |
+| Distribution Lead | `/repurpose` | Single-use content, unreviewed variants shipping |
+| Operations Manager | `/content-governance` | No approval chain, unlimited revisions, no audit trail |
 | **Growth Team** | | |
 | Growth Strategist | `/positioning-workshop` | Wrong positioning, wrong message |
 | Experiment Lead | `/experiment-designer` | Vibe-based shipping, no kill criteria |
@@ -131,93 +148,144 @@ D doesn't get worked on until you're default alive. This isn't pessimism — it'
 
 ## The Skills
 
-### `/office-hours`
+### Brand Identity Layer
+
+The brand identity layer is the foundation everything else stands on. Run these once per brand, before any content is produced. Every content and growth skill assumes this context exists — if it doesn't, you're building on air.
+
+#### `/identity`
+Capture and lock your brand's complete identity: Voice Card (8 dimensions), Sounds Like / Doesn't Sound Like contrast pairs, Voice Tests and Banned Phrases, Platform Modifiers for 10 channels, Visual Identity System (color, type, imagery, layout), Brand Architecture (offer, products, entity map, bio variants), and 10 Kill Criteria tests.
+
+*The document that answers "what does this brand sound like?" in a format every writer, designer, and AI tool can use on day one.*
+
+#### `/rules`
+Define and lock the content rules the brand never breaks. Six layers: forbidden phrases, claim constraints, legal and compliance flags, competitive rules, platform hard limits, and a quality floor. Includes a 4-level escalation protocol so violations are handled consistently, not case by case.
+
+*If the Voice Card says who you are, the Rules Card says what you never do.*
+
+#### `/memory`
+Store and retrieve approved messaging, killed positioning options, live campaign contexts, and past content decisions. Four live sections that prevent contradictions between campaigns and eliminate the most expensive problem in a small team: relitigating decisions that were already made.
+
+*"The most expensive thing in a small team isn't headcount. It's relitigating decisions you already made."*
+
+#### `/brand-check`
+7-dimension brand compliance audit for any piece of content before it ships. Scores voice, forbidden phrases, specificity, message-positioning alignment, CTA, platform compliance, and revenue gate fit. Produces a Ship / Fix / Kill verdict with specific required changes — not general feedback.
+
+*Runs after production. No vague feedback. Every issue resolved with finality.*
+
+#### `/context-setup`
+Load all 5 brand layers (identity → rules → memory → files → session charter) into a single brief before any content session starts. GREEN/YELLOW/RED status per layer. Detects conflicts between layers before anything is written. The session orchestrator — everything in a content session runs after this.
+
+*Run this first. Every time. A session without context is a session that produces generic output.*
+
+#### `/files`
+Index and manage all brand reference documents. 5-tier authority stack (system rules → active briefs → standing guides → reference → informal decisions). Tracks freshness, maps conflicts between documents, and resolves priority when two sources disagree.
+
+*"The most dangerous document on your team is the one everyone uses and no one owns."*
+
+#### `/repurpose`
+Turn one piece of long-form content into platform-ready assets. Filters talking points before writing anything — weak source content doesn't get amplified, it gets killed here. Produces LinkedIn posts, emails, X threads, short-form video briefs, and newsletter sections. Runs `/brand-check` on every variant before adding it to the distribution package.
+
+*Repurposing without brand-checking is spreading noise faster.*
+
+#### `/content-governance`
+Define and run the approval workflow for all content leaving the brand. Approval matrix per content type, SLA table, revision limits with out-of-scope triggers, 4-level escalation protocol, per-piece audit trail, defect log, and L10 weekly governance scorecard.
+
+*"If the founder is in every approval loop, the founder is the bottleneck — not the content."*
+
+---
+
+### Core Operating Loop
+
+#### `/office-hours`
 Challenge the idea before you build it. Reframes the problem, challenges 3 premises, generates 3 approaches (smallest test, best client path, scalable path). Recommends the narrowest wedge to prove the thesis.
 
 *YC equivalent: "Talk to users first. Build second."*
 
-### `/ceo-review`
+#### `/ceo-review`
 Pressure-test any feature or product decision before your team spends time on it. Applies Best Client Test, Maintainability Check, and Revenue Gate.
 
 *YC equivalent: "Is this the right thing to build right now?"*
 
-### `/eng-review`
+#### `/eng-review`
 Architecture and safety review before code ships. Simulates the missing senior engineer. Catches technical debt, security gaps, and maintainability issues.
 
 *Garry equivalent: gstack's `/plan-eng-review` — ASCII diagrams, failure modes, security concerns.*
 
-### `/ux-review`
+#### `/ux-review`
 UX review from the perspective of a first-time, mildly-stressed client. Catches friction, confusion, and AI slop before real clients see it.
 
 *Garry equivalent: gstack's `/design-review` — catching the gap between "it works" and "a real user would use this."*
 
-### `/ship`
+#### `/ship`
 Release ritual. Makes every deployment documented, reversible, and client-safe.
 
 *Garry equivalent: gstack's `/ship` — tests, PR, changelog, post-ship monitoring.*
 
-### `/retro`
+#### `/retro`
 Weekly visibility on team output, client delivery health, and founder decisions. Navigation instrument, not performance review.
 
 *Garry equivalent: gstack's `/retro` — lines added, commits, coverage trend.*
 
-### `/gtm-review`
+#### `/gtm-review`
 Pressure-test any GTM initiative. Applies Best Client Test and Revenue Gate to campaigns and outreach. Flags wrong message, wrong target, wrong channel.
 
 *No gstack equivalent — GTM is the founder's job.*
 
-### `/brief-review`
-Two-mode content quality gate. **Before production:** reviews the brief for audience clarity, outcome clarity, voice, constraints, and success criteria. **After production:** reviews AI output for generic language, brand voice, specificity, CTA, and the "would your best client publish this?" test. Includes a red-flag phrase list and rewrite capability.
+#### `/brief-review`
+Two-mode content quality gate. **Before production:** reviews the brief for audience clarity, outcome clarity, voice, constraints, and success criteria. **After production:** reviews AI output for generic language, brand voice, specificity, CTA, and the "would your best client publish this?" test.
 
 *The skill that makes you unfireable. If it could have been written by anyone, rewrite it.*
 
-### `/sprint-plan`
+#### `/sprint-plan`
 Plan a sprint for your team against one clear goal. Every task gets filtered through the three principles before it gets assigned.
 
 *YC equivalent: "What's the one thing you're shipping this week?"*
 
-### `/l10`
+#### `/l10`
 Monday clarity check — a founder-adapted Level 10 meeting based on EOS/Traction by Gino Wickman. Covers scorecard, Rock review, headlines, last week's To-Dos, and IDS (Identify, Discuss, Solve). Same agenda every Monday. Produces a To-Do list with owners and due dates before you open Slack.
 
 *EOS principle: "Rocks, not sand. Put the big stones in first."*
-*Garry Tan equivalent: making invisible work visible — `/review` resolves issues with finality.*
 
-### `/positioning-workshop`
-Fast structured positioning session using April Dunford's JTBD framework. Produces 3 ranked positioning options, a competitor 2x2 matrix, and a Revenue Gate recommendation. Kills positions that fail the Best Client Test and suggests pivots.
+---
+
+### Growth Team
+
+#### `/positioning-workshop`
+Fast structured positioning session using April Dunford's JTBD framework. Produces 3 ranked positioning options, a competitor 2x2 matrix, and a Revenue Gate recommendation. Kills positions that fail the Best Client Test.
 
 *"If you can't explain why someone would switch to you in one sentence, you don't have positioning — you have a wishlist."*
 
-### `/experiment-designer`
-Designs rigorous low-risk growth experiments. Forces a written hypothesis, primary and guardrail metrics, and a kill criterion before anything launches. Outputs a Notion/Airtable experiment template.
+#### `/experiment-designer`
+Designs rigorous low-risk growth experiments. Forces a written hypothesis, primary and guardrail metrics, and a kill criterion before anything launches.
 
 *"Every campaign without a kill criterion is a hobby."*
 
-### `/cohort-review`
+#### `/cohort-review`
 Analyzes cohort and segment data to find growth truth. Runs the default alive check first. Identifies profitable cohorts (LTV:CAC > 3x), leaky buckets, and the highest-leverage segment or channel right now.
 
 *"Vanity metrics are comfort food. Cohort data is the blood test."*
 
-### `/launch-orchestrator`
+#### `/launch-orchestrator`
 Builds and sequences a realistic launch campaign (-7 days to +3 days). Includes copy variants for Product Hunt, X, and LinkedIn, a 50-account seeding list template, and a "Would Garry RT this?" hook filter.
 
 *"A launch without coordination is just noise with a countdown."*
 
-### `/customer-interview-synthesizer`
+#### `/customer-interview-synthesizer`
 Distills raw user call notes and transcripts into Jobs-to-be-Done, objection patterns, and updated best client persona. Flags if you're talking to the wrong segment before you build anything.
 
 *"Talking to users without synthesizing is just expensive small talk."*
 
-### `/virality-loop-designer`
+#### `/virality-loop-designer`
 Diagnoses current viral coefficient and designs 3 concrete referral/viral loop options. Each loop includes incentive copy, success metric, implementation effort, and a Best Client Test filter.
 
 *"If your users aren't bringing you more users, you have a product — not a growth engine."*
 
-### `/seo-content-system`
+#### `/seo-content-system`
 Turns any topic into a full SEO content cluster — pillar page + 2–3 cluster articles + internal linking plan. Includes an EEAT check and a "would your best client share this?" filter before publishing.
 
 *"One blog post is a lottery ticket. A content system is a compounding asset."*
 
-### `/growth-sprint`
+#### `/growth-sprint`
 Orchestrates the full growth loop across all fstack growth skills. Run at the start of any new growth push or quarterly reset. Chains: `/customer-interview-synthesizer` → `/positioning-workshop` → `/experiment-designer` → `/launch-orchestrator` → `/cohort-review` → `/retro`.
 
 *"Growth isn't a department. It's a loop."*
@@ -225,6 +293,17 @@ Orchestrates the full growth loop across all fstack growth skills. Run at the st
 ---
 
 ## Skill Chaining
+
+### Brand context chain (run before any content production)
+```
+/identity + /rules + /memory + /files
+               ↓
+          /context-setup
+               ↓
+/brief-review / /repurpose / /content-governance
+```
+
+Run `/context-setup` at the start of every content session. If any of the four input layers are missing, it surfaces them with a RED status and stops — it does not proceed on incomplete context.
 
 ### Core operating loop (weekly)
 ```
@@ -250,7 +329,14 @@ Run `/growth-sprint` to orchestrate the entire cycle automatically.
 
 ### Content loop (per piece)
 ```
-/office-hours → /brief-review (MODE 1) → [produce] → /brief-review (MODE 2) → /gtm-review → publish
+/context-setup
+      ↓
+/brief-review (MODE 1) → [produce] → /brand-check → /gtm-review → publish
+```
+
+Or with repurposing:
+```
+/context-setup → /repurpose → /brand-check (runs on each variant) → schedule
 ```
 
 ---
@@ -268,10 +354,26 @@ cp -Rf ~/.claude/skills/fstack .claude/skills/fstack && rm -rf .claude/skills/fs
 Then add to your project's `CLAUDE.md`:
 ```
 ## fstack skills
-Available skills: /office-hours, /ceo-review, /eng-review, /ux-review, /ship, /retro, 
-/gtm-review, /brief-review, /sprint-plan, /l10, /positioning-workshop, /experiment-designer, 
-/cohort-review, /launch-orchestrator, /customer-interview-synthesizer, /virality-loop-designer, 
-/seo-content-system, /growth-sprint
+
+Brand Identity Layer (run once per brand, in this order):
+/identity, /rules, /memory, /files, /context-setup
+
+Brand Operations (run per session or per piece):
+/brand-check, /repurpose, /content-governance
+
+Core Operating Loop:
+/office-hours, /ceo-review, /eng-review, /ux-review, /ship, /retro,
+/gtm-review, /brief-review, /sprint-plan, /l10
+
+Growth Team:
+/positioning-workshop, /experiment-designer, /cohort-review, /launch-orchestrator,
+/customer-interview-synthesizer, /virality-loop-designer, /seo-content-system, /growth-sprint
+
+Rules:
+- Start every content session with /context-setup
+- Start every new idea with /office-hours
+- Start every growth push with /growth-sprint
+- Run /brand-check before anything ships to a client or goes live
 ```
 
 ---
@@ -291,13 +393,15 @@ Available skills: /office-hours, /ceo-review, /eng-review, /ux-review, /ship, /r
 
 ## How to Adapt This to Your Business
 
-1. **Identify your best client.** The one with the highest margin, lowest friction, and happiest relationship. That's your ICP template and your product specification.
+1. **Build the brand layer first.** Run `/identity` → `/rules` → `/memory`. Don't produce content against an undefined brand. Every piece produced without these is technical debt you'll pay in revision rounds.
 
-2. **Set your revenue target.** The number that makes you default alive. Every D-bucket task gets killed until you hit it.
+2. **Identify your best client.** The one with the highest margin, lowest friction, and happiest relationship. That's your ICP template and your product specification.
 
-3. **Define your one offer.** The outcome you sell, not the feature. Strip all feature language from external-facing materials.
+3. **Set your revenue target.** The number that makes you default alive. Every D-bucket task gets killed until you hit it.
 
-4. **Install the sprint rhythm.** Fixed weekly meeting. One goal per sprint. Explicit deferrals. If you don't have this, nothing will catch the drift until it's a crisis.
+4. **Define your one offer.** The outcome you sell, not the feature. Strip all feature language from external-facing materials.
+
+5. **Install the sprint rhythm.** Fixed weekly meeting. One goal per sprint. Explicit deferrals. If you don't have this, nothing will catch the drift until it's a crisis.
 
 ---
 
@@ -333,6 +437,7 @@ The source of the core operating principles that run through every skill here �
 - [Garry's "Boil the Lake" essay](https://garryslist.org/posts/boil-the-ocean) — completeness principle
 - EOS / Traction by Gino Wickman — sprint rhythm and L10 structure
 - Paul Graham's essays — default alive, ramen profitable, do things that don't scale
+- April Dunford's *Obviously Awesome* — positioning framework used in `/positioning-workshop` and `/identity`
 
 ---
 
