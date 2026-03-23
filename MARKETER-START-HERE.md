@@ -30,6 +30,9 @@ If you don't have that documented yet, build it first. The Brand Identity Layer 
 → [blueprint-blog.md](templates/marketer/blueprint-blog.md) — Blog post or long-form article
 → [blueprint-email.md](templates/marketer/blueprint-email.md) — Cold outreach or nurture sequence
 
+**Prompt template** — the base structure for briefing AI correctly. Three versions: basic, gstack-aligned, and Anthropic-standard. Fork any of them and build your own:
+→ [prompt-template.md](templates/marketer/prompt-template.md) — Role / Context / Task / Constraints / Format
+
 **Filled example** — see a completed Voice Card for DashoContent:
 → [examples/dashocontent/identity.md](examples/dashocontent/identity.md)
 
